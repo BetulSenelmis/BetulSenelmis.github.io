@@ -21,6 +21,29 @@ body,h1,h2,p,ul,li {
     font-size: 28px;
     margin-bottom: 10px;
   }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+header a {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
 
 nav ul {
   list-style: none;
