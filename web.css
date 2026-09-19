@@ -1,31 +1,39 @@
 /* Reset some default browser style */
-body,h1,h2,p,ul,li {
+body, h1, h2, h3, h4, p, ul, li {
     margin: 0;
     padding: 0;
-  }
+}
 
-  /* Apply some basic styles */
-  body {
+/* Apply some basic styles */
+body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     color: #333;
-  }
+    padding-top: 80px; /* Skubber alt indhold ned, så det ikke gemmer sig bag headeren */
+}
 
-  header {
+/* Header (den faste menu i toppen) */
+header {
     background-color: #333;
     padding: 20px;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 
-  h1 {
+h1 {
     color: #fff;
     font-size: 28px;
     margin-bottom: 10px;
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 a {
@@ -37,28 +45,26 @@ header a {
     color: #fff;
 }
 
-main {
-    padding: 20px;
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
-section {
-    margin-bottom: 20px;
-}
+/* --- VIDEO SEKTION --- */
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-/* Styling til video-sektionen */
 .home {
     position: relative;
     width: 100%;
-    height: 100vh; /* Fylder hele skærmen */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: -80px; /* Trækker videoen op bag headeren */
+    padding-top: 80px; /* Skubber teksten ned, så den ikke gemmer sig bag headeren */
 }
 
 .back-video {
@@ -73,25 +79,45 @@ nav ul {
 
 .home-text {
     text-align: center;
-    color: #fff; /* Hvid tekst oven på videoen */
+    color: #fff;
     z-index: 1;
+    padding: 20px;
+}
+
+.home-text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ccc;
 }
 
 .home-text h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .home-text span {
-    color: #007bff; /* Fremhæv tallet 101 med blå */
+    color: #007bff; /* Blå farve til "101" */
 }
 
+.home-text h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Styling af knappen */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: #007bff;
     color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
+.btn:hover {
+    background-color: #0056b3; /* Mørkere blå når man holder musen over */
+}
