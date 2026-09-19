@@ -50,4 +50,48 @@ nav ul {
   display: flex;
   gap: 20px;
 }
+/* Styling til video-sektionen */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Fylder hele skærmen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for videoen dækker hele området */
+    z-index: -1; /* Lægger videoen bag teksten */
+}
+
+.home-text {
+    text-align: center;
+    color: #fff; /* Hvid tekst oven på videoen */
+    z-index: 1;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.home-text span {
+    color: #007bff; /* Fremhæv tallet 101 med blå */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
 
