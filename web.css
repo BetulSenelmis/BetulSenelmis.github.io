@@ -110,7 +110,7 @@ footer {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #007bff;
+    background-color: #ff4d4d;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -119,5 +119,5 @@ footer {
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Mørkere blå når man holder musen over */
+    background-color: #cc0000; /* Mørkere rød når man holder musen over */
 }
