@@ -512,7 +512,7 @@ img{
 
 .Tcontainer{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -530,8 +530,16 @@ img{
     cursor: pointer;
 }
 
-.skill-box:last-child{
-    grid-column: 2;
+.skill-box{
+    grid-column: span 2;
+}
+
+.skill-box:nth-child(4){
+    grid-column: 2 / span 2;
+}
+
+.skill-box:nth-child(5){
+    grid-column: 4 / span 2;
 }
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
@@ -622,7 +630,9 @@ img{
         padding: 2rem 50px;
     }
 
-    .skill-box:last-child{
+    .skill-box,
+    .skill-box:nth-child(4),
+    .skill-box:nth-child(5){
         grid-column: auto;
     }
 }
