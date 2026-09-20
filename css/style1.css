@@ -153,12 +153,12 @@ header.sticky{
     font-weight: 600;
 }
 .about-img img{
-    aspect-ratio: 1;
-    width: 100%;
-    max-width: 460px;
+    width: min(100%, 460px);
+    height: min(460px, 80vw);
     border-radius: 50%;
     object-fit: cover;
     display: block;
+    margin: 0 auto;
 }
 
 .main-text{
