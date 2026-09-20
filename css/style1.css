@@ -258,18 +258,22 @@ header.sticky{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
     gap: 2rem;
     margin-top: 5rem;
 }
 .row img{
-    height: auto;
+    aspect-ratio: 16 / 9;
     width: 100%;
+    object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
 }
 .row{
+    display: flex;
+    flex-direction: column;
+    min-height: 270px;
     padding: 25px;
     background: #12141c;
     border-radius: 0.5rem;
@@ -284,6 +288,12 @@ header.sticky{
 .row h3{
     font-size: 25px;
     font-weight: 700;
+    line-height: 1.2;
+}
+.row p{
+    color: var(--second-color);
+    line-height: 1.6;
+    margin-top: 0.75rem;
 }
 .row h6{
     color: var(--main-color);
