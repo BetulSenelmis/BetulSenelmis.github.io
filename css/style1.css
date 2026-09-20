@@ -318,6 +318,13 @@ header.sticky{
     text-align: center;
     transition: all .40s ease;
 }
+.interest-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
 .interest-card:hover{
     transform: translateY(-5px);
     border-top-color: var(--main-color);
