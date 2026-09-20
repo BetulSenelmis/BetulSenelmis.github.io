@@ -205,6 +205,57 @@ header.sticky{
     color: var(--main-color);
 }
 
+.experience-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #12141c;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+.experience-card:hover{
+    transform: translateY(-5px);
+    border-top-color: var(--main-color);
+}
+.experience-card-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--main-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.experience-card h3{
+    margin: 18px 0 8px;
+    font-size: 1.55rem;
+}
+.experience-card h4{
+    color: var(--main-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.experience-card p{
+    color: var(--second-color);
+    line-height: 1.7;
+}
+.experience-card .experience-tools{
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+.project-link{
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
