@@ -512,19 +512,26 @@ img{
 
 .Tcontainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
 }
 
 .skill-box{
     padding: 1rem;
+    min-height: 170px;
     color: #ddd;
     cursor: pointer;
+}
+
+.skill-box:last-child{
+    grid-column: 2;
 }
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
@@ -602,10 +609,21 @@ img{
     z-index: 2;
 }
 
+.tech-label span{
+    color: #020312;
+    font-size: 1.2rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
 @media screen and (max-width: 990px){
     .Tcontainer{
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
+    }
+
+    .skill-box:last-child{
+        grid-column: auto;
     }
 }
     
