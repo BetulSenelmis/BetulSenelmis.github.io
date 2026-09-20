@@ -536,10 +536,12 @@ img{
 
 .skill-box:nth-child(4){
     grid-column: 2;
+    grid-row: 2;
 }
 
 .skill-box:nth-child(5){
     grid-column: 4;
+    grid-row: 2;
 }
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
@@ -634,6 +636,7 @@ img{
     .skill-box:nth-child(4),
     .skill-box:nth-child(5){
         grid-column: auto;
+        grid-row: auto;
     }
 }
     
