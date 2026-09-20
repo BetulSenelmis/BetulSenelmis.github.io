@@ -196,11 +196,13 @@ header.sticky{
     transition: all .40s ease;
 }
 .skill-card-image{
-    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 .box p{
     color: var(--second-color);
@@ -270,6 +272,29 @@ header.sticky{
     color: var(--second-color);
     line-height: 1.7;
 }
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.skills-content .box{
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    padding: 25px;
+}
+.skills-content .box h3,
+.skills-content .box p{
+    grid-column: 2;
+}
+.skills-content .box h3{
+    margin: 0;
+}
+.skills-content .box p{
+    margin: 0;
+}
 .experience-card .experience-tools{
     margin-top: 1rem;
     font-size: 0.95rem;
@@ -277,10 +302,8 @@ header.sticky{
 .project-link{
     display: inline-block;
     margin-top: 1.25rem;
-    color: var(--main-color);
     font-weight: 600;
 }
-
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -475,6 +498,9 @@ form textarea{
         text-align: center;
     }
     .contact{
+        grid-template-columns: 1fr;
+    }
+    .skills-content{
         grid-template-columns: 1fr;
     }
 }
