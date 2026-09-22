@@ -1,0 +1,7 @@
+title: "Betul Senelmis | Portfolio"
+description: "Portfolio website for Betul Senelmis."
+url: "https://betulsenelmis.github.io"
+baseurl: ""
+
+plugins:
+  - jekyll-sitemap
