@@ -1,7 +1,27 @@
 title: "Betul Senelmis | Portfolio"
-description: "Portfolio website for Betul Senelmis."
+description: "Portfolio, projects and work by Betul Senelmis, including web development, Python, AI and app development."
 url: "https://betulsenelmis.github.io"
 baseurl: ""
+lang: "da"
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: pretty
+
+twitter:
+  username: "betulsenelmis"
+  card: "summary_large_image"
+
+social:
+  name: "Betul Senelmis"
+  links:
+    - "https://github.com/BetulSenelmis"
+    - "https://betulsenelmis.github.io/"
